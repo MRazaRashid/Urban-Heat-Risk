@@ -1,0 +1,56 @@
+[
+  {
+    "zone_id": "central",
+    "neighbourhood": "Central District",
+    "latitude": 51.5074,
+    "longitude": -0.1278,
+    "tree_canopy_pct": 13,
+    "green_space_pct": 10,
+    "population_density": 12200
+  },
+  {
+    "zone_id": "riverside",
+    "neighbourhood": "Riverside",
+    "latitude": 51.5032,
+    "longitude": -0.112,
+    "tree_canopy_pct": 29,
+    "green_space_pct": 24,
+    "population_density": 8200
+  },
+  {
+    "zone_id": "north",
+    "neighbourhood": "North Quarter",
+    "latitude": 51.523,
+    "longitude": -0.123,
+    "tree_canopy_pct": 19,
+    "green_space_pct": 16,
+    "population_density": 10500
+  },
+  {
+    "zone_id": "east",
+    "neighbourhood": "East Market",
+    "latitude": 51.513,
+    "longitude": -0.089,
+    "tree_canopy_pct": 9,
+    "green_space_pct": 7,
+    "population_density": 15600
+  },
+  {
+    "zone_id": "west",
+    "neighbourhood": "West Gardens",
+    "latitude": 51.51,
+    "longitude": -0.153,
+    "tree_canopy_pct": 42,
+    "green_space_pct": 36,
+    "population_density": 6600
+  },
+  {
+    "zone_id": "south",
+    "neighbourhood": "South Park",
+    "latitude": 51.488,
+    "longitude": -0.126,
+    "tree_canopy_pct": 36,
+    "green_space_pct": 32,
+    "population_density": 7900
+  }
+]

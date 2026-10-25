@@ -1,0 +1,23 @@
+{
+  "project": "Urban Heat Risk Monitoring & Cooling Spot Finder",
+  "dataset_type": "Fully synthetic demonstration data. NOT sensor measurements or real cooling facilities.",
+  "geography": "Six fictional neighbourhood names with central-London-like coordinates for map testing",
+  "date_start_utc": "2025-06-01T00:00:00Z",
+  "date_end_utc": "2025-08-31T23:00:00Z",
+  "frequency": "Hourly per zone",
+  "collections": {
+    "readings": 13248,
+    "zones": 6,
+    "cooling_spots": 20
+  },
+  "reading_risk_counts": {
+    "low": 11410,
+    "moderate": 1190,
+    "high": 648
+  },
+  "weather_measurements_real": false,
+  "cooling_site_information_verified": false,
+  "source": "Deterministic synthetic generator; matches the sample Flask/MongoDB project model",
+  "random_seed": 20251020,
+  "note": "Not suitable for weather forecasting, public-health advice or navigating to actual cooling facilities."
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "spot_id": "984ae783-fc5e-58ca-984f-16f0cff55fc2",
+    "spot_name": "Civic Library",
+    "spot_type": "library",
+    "address": "1 Central Plaza, Demo City (fictional)",
+    "latitude": 51.508,
+    "longitude": -0.128,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.128,
+        51.508
+      ]
+    },
+    "opening_hours": "Mon-Sat 09:00-18:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "2e6cad40-0a53-5d6c-b717-c18b56e7c56e",
+    "spot_name": "Riverside Community Hall",
+    "spot_type": "community centre",
+    "address": "12 River Lane, Demo City (fictional)",
+    "latitude": 51.504,
+    "longitude": -0.11,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.11,
+        51.504
+      ]
+    },
+    "opening_hours": "Daily 10:00-19:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "b2194b23-c9bc-5b84-8ba1-11329385ecd1",
+    "spot_name": "North Learning Hub",
+    "spot_type": "library",
+    "address": "4 North Street, Demo City (fictional)",
+    "latitude": 51.521,
+    "longitude": -0.12,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.12,
+        51.521
+      ]
+    },
+    "opening_hours": "Mon-Fri 08:00-20:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "5f8b796d-543c-54be-ae48-3ec5ef9f2250",
+    "spot_name": "East Market Shelter",
+    "spot_type": "community centre",
+    "address": "8 Market Road, Demo City (fictional)",
+    "latitude": 51.513,
+    "longitude": -0.093,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.093,
+        51.513
+      ]
+    },
+    "opening_hours": "Daily 11:00-18:00",
+    "accessibility": false,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "319c298c-d976-518e-a068-ff196321de28",
+    "spot_name": "West Gardens Pavilion",
+    "spot_type": "park",
+    "address": "3 Garden Walk, Demo City (fictional)",
+    "latitude": 51.509,
+    "longitude": -0.15,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.15,
+        51.509
+      ]
+    },
+    "opening_hours": "Daily 08:00-20:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "8f24c22c-b7aa-5bac-910b-5d64a72e5420",
+    "spot_name": "South Park Community Room",
+    "spot_type": "community centre",
+    "address": "10 South Avenue, Demo City (fictional)",
+    "latitude": 51.49,
+    "longitude": -0.124,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.124,
+        51.49
+      ]
+    },
+    "opening_hours": "Mon-Sat 09:00-17:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "f8623403-04f5-5c93-8185-da6e20d14a54",
+    "spot_name": "Canal Reading Room",
+    "spot_type": "library",
+    "address": "22 Canal Way, Demo City (fictional)",
+    "latitude": 51.517,
+    "longitude": -0.105,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.105,
+        51.517
+      ]
+    },
+    "opening_hours": "Mon-Fri 09:00-18:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "7be9dfbe-9d2c-5dd8-a696-76b055968def",
+    "spot_name": "Central Indoor Rest Area",
+    "spot_type": "public facility",
+    "address": "5 Civic Street, Demo City (fictional)",
+    "latitude": 51.506,
+    "longitude": -0.133,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.133,
+        51.506
+      ]
+    },
+    "opening_hours": "Daily 10:00-21:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "57e0f9e5-1e8b-5577-8600-4779075fc30a",
+    "spot_name": "Central District Community Cooling Point",
+    "spot_type": "community centre",
+    "address": "Demo Facility 01, Demo City (fictional)",
+    "latitude": 51.506,
+    "longitude": -0.1316,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1316,
+        51.506
+      ]
+    },
+    "opening_hours": "Mon-Sat 10:00-18:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "5d550889-b932-5c4c-be66-77ddef205cc5",
+    "spot_name": "Riverside Neighbourhood Reading Room",
+    "spot_type": "library",
+    "address": "Demo Facility 02, Demo City (fictional)",
+    "latitude": 51.5032,
+    "longitude": -0.1139,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1139,
+        51.5032
+      ]
+    },
+    "opening_hours": "Daily 10:00-19:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "4323ce23-326b-5fe0-ad71-239ca5d5db73",
+    "spot_name": "North Quarter Public Rest Pavilion",
+    "spot_type": "park",
+    "address": "Demo Facility 03, Demo City (fictional)",
+    "latitude": 51.5244,
+    "longitude": -0.123,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.123,
+        51.5244
+      ]
+    },
+    "opening_hours": "Mon-Fri 09:00-17:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "3f2a42fd-8ac0-5ba1-8f65-f09cf656b915",
+    "spot_name": "East Market Indoor Cooling Lounge",
+    "spot_type": "public facility",
+    "address": "Demo Facility 04, Demo City (fictional)",
+    "latitude": 51.5158,
+    "longitude": -0.0871,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.0871,
+        51.5158
+      ]
+    },
+    "opening_hours": "Mon-Sat 10:00-18:00",
+    "accessibility": false,
+    "availability_status": "closed"
+  },
+  {
+    "spot_id": "aae5f72c-d687-5543-b734-f429aaceeda2",
+    "spot_name": "West Gardens District Community Hub",
+    "spot_type": "community centre",
+    "address": "Demo Facility 05, Demo City (fictional)",
+    "latitude": 51.5072,
+    "longitude": -0.1492,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1492,
+        51.5072
+      ]
+    },
+    "opening_hours": "Daily 10:00-19:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "b36ba0fb-783f-5de4-8546-b01854407fec",
+    "spot_name": "South Park Garden Shade Pavilion",
+    "spot_type": "park",
+    "address": "Demo Facility 06, Demo City (fictional)",
+    "latitude": 51.4866,
+    "longitude": -0.1203,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1203,
+        51.4866
+      ]
+    },
+    "opening_hours": "Mon-Fri 09:00-17:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "5001e617-dff9-55a0-b1a0-e06245017bb3",
+    "spot_name": "Central District Summer Relief Centre",
+    "spot_type": "public facility",
+    "address": "Demo Facility 07, Demo City (fictional)",
+    "latitude": 51.5074,
+    "longitude": -0.1335,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1335,
+        51.5074
+      ]
+    },
+    "opening_hours": "Mon-Sat 10:00-18:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "09e7394d-525b-5a06-8c78-3554cab3663f",
+    "spot_name": "Riverside Civic Activity Centre",
+    "spot_type": "community centre",
+    "address": "Demo Facility 08, Demo City (fictional)",
+    "latitude": 51.5046,
+    "longitude": -0.1158,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1158,
+        51.5046
+      ]
+    },
+    "opening_hours": "Daily 10:00-19:00",
+    "accessibility": false,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "3ca600ba-8cc0-589b-9902-bf09d597bf5a",
+    "spot_name": "North Quarter Learning and Rest Point",
+    "spot_type": "library",
+    "address": "Demo Facility 09, Demo City (fictional)",
+    "latitude": 51.5258,
+    "longitude": -0.1249,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1249,
+        51.5258
+      ]
+    },
+    "opening_hours": "Mon-Fri 09:00-17:00",
+    "accessibility": true,
+    "availability_status": "closed"
+  },
+  {
+    "spot_id": "179e4421-bbda-5428-bd9a-4086c5bf4765",
+    "spot_name": "East Market Neighbourhood Welcome Hall",
+    "spot_type": "community centre",
+    "address": "Demo Facility 10, Demo City (fictional)",
+    "latitude": 51.5102,
+    "longitude": -0.089,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.089,
+        51.5102
+      ]
+    },
+    "opening_hours": "Mon-Sat 10:00-18:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "dde894eb-446c-527f-88fe-a9c362db5b9e",
+    "spot_name": "West Gardens Green Space Rest Hub",
+    "spot_type": "park",
+    "address": "Demo Facility 11, Demo City (fictional)",
+    "latitude": 51.5086,
+    "longitude": -0.1511,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1511,
+        51.5086
+      ]
+    },
+    "opening_hours": "Daily 10:00-19:00",
+    "accessibility": true,
+    "availability_status": "open"
+  },
+  {
+    "spot_id": "98d181d9-331a-5133-a669-8da91bd42466",
+    "spot_name": "South Park Indoor Community Lounge",
+    "spot_type": "public facility",
+    "address": "Demo Facility 12, Demo City (fictional)",
+    "latitude": 51.488,
+    "longitude": -0.1222,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.1222,
+        51.488
+      ]
+    },
+    "opening_hours": "Mon-Fri 09:00-17:00",
+    "accessibility": false,
+    "availability_status": "open"
+  }
+]
