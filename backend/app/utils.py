@@ -1,4 +1,3 @@
-"""Shared conversion, validation, access-control and geographic helpers."""
 from datetime import datetime, timezone
 from functools import wraps
 from math import asin, cos, radians, sin, sqrt
