@@ -87,8 +87,7 @@ def read_paginated(collection, query=None, order="timestamp", max_page_size=100)
 
 
 def heat_index_c(temperature_c, humidity_pct):
-    # Rothfusz regression (US NWS), generally used for hot/humid conditions.
-    # Below its useful range, report the air temperature as a simple approximation.
+
     if temperature_c < 27 or humidity_pct < 40:
         return round(temperature_c, 1)
     t = temperature_c * 9 / 5 + 32
