@@ -425,15 +425,6 @@ Routes validate required fields, zone existence, date formats, selected numeric 
 | Empty `blacklist` collection | Revoked tokens are removed after expiry by MongoDB TTL cleanup |
 | Port `5001` unavailable | Close the process using the port, or update `run.py` and Postman `baseUrl` |
 
-## Data limitations and security
-
-- **Synthetic dataset:** Readings, neighbourhoods and cooling spots are fictional; do not use this system for real emergency planning or public-health alerts.
-- **Local development:** The supplied `run.py` binds to `127.0.0.1:5001` and is intended for development/testing.
-- **Secrets:** Never publish `.env`, real admin credentials, JWT signing keys or sensitive MongoDB user exports.
-- **Authentication design:** The current demonstration API uses GET for login/logout. A deployed application should use HTTPS and appropriate non-GET authentication endpoints.
-- **AI assistance:** If this project is submitted as coursework, acknowledge and explain any AI assistance in accordance with your module's marking requirements.
-
----
 
 **Project repository:** https://github.com/MRazaRashid/Urban-Heat-Risk
 
