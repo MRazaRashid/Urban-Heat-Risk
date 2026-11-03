@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from functools import wraps
-from math import asin, cos, radians, sin, sqrt
+from math import asin, cos, isfinite, radians, sin, sqrt
 from uuid import uuid4
 
 from flask import current_app, jsonify

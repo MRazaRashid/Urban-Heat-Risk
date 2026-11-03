@@ -1,10 +1,10 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta,timezone
 import re
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required
 from werkzeug.security import check_password_hash, generate_password_hash
 from pymongo.errors import DuplicateKeyError
-
+from flask_jwt_extended import get_jwt, jwt_required
 from .utils import heat_index_c, risk_category
 from .utils import admin_only, db, error, haversine_km, json_ready, number, parse_date, read_paginated, uid, utcnow
 
@@ -187,7 +187,6 @@ def nearby_cooling():
             "$maxDistance": max_km * 1000
         }}}).limit(30))
     except Exception as exc:
-        # The fallback also makes the demo usable with lightweight test databases.
         if type(exc).__name__ not in {"NotImplementedError", "OperationFailure", "TypeError"}:
             raise
         found = list(db().cooling_spots.find(query))
@@ -257,12 +256,15 @@ def analytics():
                               "average_heat_index": round(r["average_heat_index"], 1), "readings": r["readings"]}
                              for r in db().readings.aggregate(pipeline)]})
 
-
+#***************************Authourization**************************
 @api.post("/auth/register")
 def register():
     try:
         data = load_json()
         required(data, "name", "email", "password")
+        name = str(data["name"]).strip()
+        if not name:
+            raise ValueError("Name cannot be blank")
         email = str(data["email"]).strip().lower()
         if not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email):
             raise ValueError("Enter a valid email address")
@@ -270,7 +272,7 @@ def register():
             raise ValueError("Password must be at least 8 characters")
     except ValueError as exc:
         return error(str(exc))
-    user = {"user_id": uid(), "name": str(data["name"]).strip(), "email": email,
+    user = {"user_id": uid(), "name": name, "email": email,
             "password_hash": generate_password_hash(data["password"]), "role": "user", "created_at": utcnow()}
     try:
         db().users.insert_one(user)
@@ -278,20 +280,63 @@ def register():
         return error("Account already exists", 409)
     return jsonify({"message": "Account created"}), 201
 
-
-@api.post("/auth/login")
+@api.get("/auth/login")
 def login():
     try:
-        data = load_json()
+        data = request.args
         required(data, "email", "password")
     except ValueError as exc:
         return error(str(exc))
-    user = db().users.find_one({"email": str(data["email"]).lower().strip()})
-    if not user or not check_password_hash(user["password_hash"], data["password"]):
-        return error("Invalid email or password", 401)
-    token = create_access_token(identity=user["user_id"], additional_claims={"role": user["role"]}, expires_delta=timedelta(hours=8))
-    return jsonify({"access_token": token, "user": {"name": user["name"], "role": user["role"], "email": user["email"]}})
 
+    user = db().users.find_one({
+        "email": str(data["email"]).lower().strip()
+    })
+
+    if not user or not check_password_hash(
+        user["password_hash"], data["password"]
+    ):
+        return error("Invalid email or password", 401)
+
+    token = create_access_token(
+        identity=user["user_id"],
+        additional_claims={"role": user["role"]},
+        expires_delta=timedelta(minutes=8)
+    )
+
+    return jsonify({
+        "access_token": token,
+        "user": {
+            "name": user["name"],
+            "role": user["role"],
+            "email": user["email"]
+        }
+    }), 200
+
+@api.get("/auth/logout")
+@jwt_required()
+def logout():
+    token = get_jwt()
+
+    expires_at = datetime.fromtimestamp(
+        token["exp"],
+        tz=timezone.utc
+    )
+
+    db().blacklist.update_one(
+        {"jti": token["jti"]},
+        {
+            "$setOnInsert": {
+                "jti": token["jti"],
+                "expires_at": expires_at,
+                "revoked_at": datetime.now(timezone.utc)
+            }
+        },
+        upsert=True
+    )
+
+    return jsonify({
+        "message": "Successfully logged out"
+    }), 200
 
 @api.get("/admin/readings")
 @admin_only
